@@ -1,12 +1,15 @@
 importScripts('serviceworker-cache-polyfill.js');
-   
-   self.addEventListener('fetch', function(event) {
-    event.respondWith(
-      caches.open('mysite-dynamic').then(function(cache) {
-        return fetch(event.request).then(function(response) {
+
+this.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request).then(function(resp) {
+      return resp || fetch(event.request).then(function(response) {
+        return caches.open('v1').then(function(cache) {
           cache.put(event.request, response.clone());
           return response;
         });
-      })
-    );
-  });
+      });
+    })
+  );
+});
+   
