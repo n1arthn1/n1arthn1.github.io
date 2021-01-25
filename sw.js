@@ -1,3 +1,4 @@
+/*
 importScripts('serviceworker-cache-polyfill.js');
 
 this.addEventListener('fetch', function(event) {
@@ -13,3 +14,4 @@ this.addEventListener('fetch', function(event) {
   );
 });
    
+*/
