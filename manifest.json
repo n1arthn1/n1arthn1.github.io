@@ -1,12 +1,12 @@
 {
-  "theme_color": "#5ba2a2",
-  "background_color": "#318989",
+  "theme_color": "#003274",
+  "background_color": "#00467e",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "app_name": "DEV's",
-  "short_name": "DEV's",
-  "name": "DEV's",
+  "app_name": "Freed - Marketing Digital",
+  "short_name": "Freed",
+  "name": "Freed - Marketing Digital",
   "description": "By: Artur Anderson",
   "icons": [
       {
